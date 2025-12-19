@@ -81,20 +81,15 @@ export default function Section1({ setIsModalSelectCardOpen }) {
 
       {/* MOBILE VERSION */}
       {isMobile && (
-        <div className="shadow-md p-[27px] md:p-8 bg-gradient-to-b from-[#111111] to-[#0A0A0A] rounded-3xl w-[90%] mx-auto mt-[27px] border border-[#2D2D2D]">
+        <div className="shadow-md p-5 bg-gradient-to-b from-[#111111] to-[#0A0A0A] rounded-3xl w-[92%] mx-auto mt-[27px] border border-[#2D2D2D]">
           {/* Top Section */}
-          <div className="mb-16 flex flex-col md:flex-row items-center justify-center">
-            <div className="w-full flex flex-row items-center justify-end">
-              <div className="relative w-[590px] flex flex-col justify-center items-start mt-[27px]">
-                <h2 className="text-white font-manrope text-4xl font-bold leading-[120%] tracking-[0px] mb-[27px]">
-                  Tecnología <br />
-                  financiera para
-                  <br />
-                  impulsar tu
-                  <br />
-                  empresa
+          <div className="mb-10 flex flex-col items-center justify-center">
+            <div className="w-full">
+              <div className="flex flex-col justify-center items-start mt-4">
+                <h2 className="text-white font-manrope text-[26px] font-bold leading-[120%] tracking-[0px] mb-4">
+                  Tecnología financiera para impulsar tu empresa
                 </h2>
-                <p className="text-[#A1A1A6] font-inter text-xl font-normal leading-[132%] tracking-[0px]">
+                <p className="text-[#A1A1A6] font-inter text-base font-normal leading-[150%] tracking-[0px]">
                   Brindamos soluciones de pago integrales que simplifican y
                   aseguran tus operaciones. Desde pasarelas de pago hasta
                   terminales TPV, ofrecemos la tecnología que tu negocio
@@ -103,23 +98,23 @@ export default function Section1({ setIsModalSelectCardOpen }) {
               </div>
             </div>
 
-            <div className="w-full flex flex-row items-center justify-end mt-[27px]">
-              <div className="bottom-0 flex flex-col gap-4 w-full p-4">
+            <div className="w-full flex flex-row items-center justify-between mt-6">
+              <div className="flex flex-col gap-3">
                 <Link
                   href="/pasarela-pagos"
-                  className="text-[#D4A853] font-inter text-sm font-normal leading-normal flex flex-row w-[160px] justify-between items-center hover:text-white transition-colors"
+                  className="text-[#D4A853] font-inter text-sm font-normal leading-normal flex flex-row gap-2 items-center hover:text-white transition-colors"
                 >
                   <span>Pasarela de pagos</span>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 <Link
                   href="/form-two?form=terminales-tpv"
-                  className="text-[#D4A853] font-inter text-sm font-normal leading-normal flex flex-row w-[160px] justify-between items-center hover:text-white transition-colors"
+                  className="text-[#D4A853] font-inter text-sm font-normal leading-normal flex flex-row gap-2 items-center hover:text-white transition-colors"
                 >
                   <span>Terminales TPV</span>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
@@ -127,10 +122,10 @@ export default function Section1({ setIsModalSelectCardOpen }) {
 
               <Image
                 src="/column.webp"
-                width={120}
-                height={350}
+                width={100}
+                height={280}
                 alt="Columna"
-                className="w-auto"
+                className="w-auto max-h-[180px]"
               />
             </div>
           </div>
@@ -138,29 +133,27 @@ export default function Section1({ setIsModalSelectCardOpen }) {
           <div className="h-px w-[60%] bg-[#2D2D2D] mx-auto"></div>
 
           {/* Bottom Section */}
-          <div className="mb-16 flex flex-col md:flex-row items-center justify-center">
-            <div className="w-full flex flex-row items-center justify-end">
-              <div className="relative w-[590px] flex flex-col justify-center items-center mt-[37px]">
-                <h2 className="text-center text-white font-manrope text-4xl font-bold leading-[48px] tracking-[0px]">
+          <div className="mb-8 flex flex-col items-center justify-center">
+            <div className="w-full">
+              <div className="flex flex-col justify-center items-center mt-6">
+                <h2 className="text-center text-white font-manrope text-[26px] font-bold leading-[34px] tracking-[0px]">
                   Tarjetas Centum
                 </h2>
-                <p className="text-[#A1A1A6] font-inter text-xl font-normal leading-[33px] tracking-[0px] text-center">
-                  Optimiza tu nómina y gestiona <br /> tus finanzas de manera
-                  <br />
-                  inteligente.
+                <p className="text-[#A1A1A6] font-inter text-base font-normal leading-[26px] tracking-[0px] text-center mt-2">
+                  Optimiza tu nómina y gestiona tus finanzas de manera inteligente.
                 </p>
 
-                <div className="w-[90%] flex justify-start items-end mt-[40px]">
+                <div className="w-full flex justify-center items-end mt-6">
                   <Image
                     src="/two-cards.svg"
-                    width={1000}
-                    height={750}
+                    width={400}
+                    height={300}
                     alt="Tarjetas visa"
-                    className="w-[100%]"
+                    className="w-[85%] max-w-[300px]"
                   />
                 </div>
 
-                <div className="bottom-0 flex gap-4 w-full flex-row justify-center mt-[40px]">
+                <div className="flex gap-4 w-full flex-row justify-center mt-6">
                   <button
                     className="px-6 py-3 bg-white rounded-lg hover:bg-[#F5F5F7] transition-colors text-[#0A0A0A] text-center font-inter text-base font-semibold leading-normal"
                     onClick={handleClick}

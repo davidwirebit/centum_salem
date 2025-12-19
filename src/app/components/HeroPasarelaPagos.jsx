@@ -6,17 +6,16 @@ export default function HeroPasarelaPagos() {
     <div className="bg-[#0A0A0A]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
-          <div className="flex flex-col w-full justify-end items-end">
-            <div className="max-w-[580px] flex flex-col gap-[29px] py-16">
-              <h1 className="text-white font-manrope text-[50px] font-bold leading-[124%] tracking-[0px]">
-                Procesa tus pagos de <br /> manera segura y<br />
-                eficiente
-                <span className="text-[#D4A853] font-manrope text-[50px] font-bold leading-[62px] tracking-[0px]">
+          <div className="flex flex-col w-full justify-center md:justify-end items-center md:items-end">
+            <div className="max-w-[580px] flex flex-col gap-[20px] md:gap-[29px] py-8 md:py-16 px-4 md:px-0">
+              <h1 className="text-white font-manrope text-[32px] md:text-[50px] font-bold leading-[120%] md:leading-[124%] tracking-[0px]">
+                Procesa tus pagos de manera segura y eficiente
+                <span className="text-[#D4A853] font-manrope text-[32px] md:text-[50px] font-bold leading-[120%] md:leading-[62px] tracking-[0px]">
                   {" "}
-                  con la <br /> pasarela de pagos
+                  con la pasarela de pagos
                 </span>
               </h1>
-              <p className="text-[#A1A1A6] font-inter text-[25px] font-[400] leading-[132%] tracking-[0px]">
+              <p className="text-[#A1A1A6] font-inter text-[16px] md:text-[25px] font-[400] leading-[140%] md:leading-[132%] tracking-[0px]">
                 Una solución clave para negocios que quieren crecer en el mundo
                 digital. Mejora la seguridad y comodidad de las transacciones,
                 optimizando la gestión financiera.

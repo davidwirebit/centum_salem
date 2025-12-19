@@ -253,7 +253,7 @@ export default function CardStepper() {
                 Al continuar aceptas <br /> nuestro{" "}
                 <a
                   target="_blank"
-                  href="/aviso-privacidad"
+                  href="/aviso-privacidad-salem"
                   className="underline underline-offset-2"
                 >
                   Aviso de Privacidad

@@ -10,7 +10,7 @@ export default function CardLanding({
 }) {
   return (
     <div
-      className="w-[370px] h-[400px] p-8 rounded-3xl bg-[#161616] border border-[#2D2D2D]
+      className="w-full max-w-[370px] h-auto min-h-[350px] md:h-[400px] p-6 md:p-8 rounded-3xl bg-[#161616] border border-[#2D2D2D]
         hover:border-[#D4A853]/50 backdrop-blur-sm transition-all duration-300
         hover:scale-105"
     >

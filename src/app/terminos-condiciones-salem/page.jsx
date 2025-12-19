@@ -1,11 +1,12 @@
 export default function TerminosCondicionesSalem() {
   return (
-    <div className="container shadow-xl m-10 mx-auto px-6 py-12 flex flex-col gap-8">
-      <h1 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px]">
+    <div className="min-h-screen bg-[#0A0A0A] py-12 px-4">
+      <div className="container max-w-4xl mx-auto bg-[#111111] border border-[#2D2D2D] rounded-2xl px-6 md:px-10 py-12 flex flex-col gap-8">
+      <h1 className="text-white font-manrope text-[24px] md:text-[32px] font-bold">
         Términos y Condiciones de Uso de Servicios de Salem Internacional, S.A. de C.V.
       </h1>
 
-      <div className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-inter text-[16px] font-light leading-normal tracking-[0px]">
+      <div className="text-[#A1A1A6] font-inter text-[15px] md:text-[16px] font-light leading-relaxed">
         <p>
           Bienvenido a <span className="font-bold">Salem Internacional, S.A. de C.V. (&quot;Salem&quot;).</span>  Al acceder o
           utilizar nuestros productos y servicios, usted (&quot;el Cliente&quot; o
@@ -16,7 +17,7 @@ export default function TerminosCondicionesSalem() {
         </p>
       </div>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO I: DEFINICIONES
       </h2>
 
@@ -99,7 +100,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO II: OBJETO Y ALCANCE
       </h2>
 
@@ -143,7 +144,7 @@ export default function TerminosCondicionesSalem() {
         con estos Términos y Condiciones.
       </p>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO III: PRODUCTOS Y SERVICIOS OFRECIDOS
       </h2>
 
@@ -204,7 +205,7 @@ export default function TerminosCondicionesSalem() {
         la documentación anexa.
       </p>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO IV: REQUISITOS PARA LA CONTRATACIÓN Y USO
       </h2>
 
@@ -215,7 +216,7 @@ export default function TerminosCondicionesSalem() {
         están sujetos al cumplimiento de los siguientes requisitos:
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         1. Capacidad Legal
       </h3>
 
@@ -240,7 +241,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         2. Documentación e Información Requerida
       </h3>
 
@@ -301,7 +302,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         3. Evaluación de Crédito y Perfil de Riesgo
       </h3>
 
@@ -339,7 +340,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         4. Conocimiento del Cliente (KYC - Know Your Customer)
       </h3>
 
@@ -386,7 +387,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO V: OBLIGACIONES DEL CLIENTE
       </h2>
 
@@ -398,7 +399,7 @@ export default function TerminosCondicionesSalem() {
         operaciones:
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         1. Pago Oportuno de Contraprestaciones
       </h3>
 
@@ -413,7 +414,7 @@ export default function TerminosCondicionesSalem() {
         penas convencionales que se especifiquen en cada Contrato.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         2. Información Veraz y Actualizada
       </h3>
 
@@ -430,7 +431,7 @@ export default function TerminosCondicionesSalem() {
         comunicación sea efectiva.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         3. Uso Adecuado y Lícito de los Servicios
       </h3>
 
@@ -445,7 +446,7 @@ export default function TerminosCondicionesSalem() {
         los pactados o que puedan dañar la reputación o los sistemas de Salem
         Internacional.
       </p>
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         4. Protección de Credenciales de Acceso
       </h3>
       <p>
@@ -463,7 +464,7 @@ export default function TerminosCondicionesSalem() {
         atención designados para el bloqueo correspondiente.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         5. Revisión de Comunicaciones y Estados de Cuenta
       </h3>
       <p>
@@ -478,7 +479,7 @@ export default function TerminosCondicionesSalem() {
         de objeción en los plazos indicados se considerará como aceptación
         tácita de la información contenida en dichos documentos.
       </p>
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         6. Colaboración con Autoridades
       </h3>
       <p>
@@ -492,7 +493,7 @@ export default function TerminosCondicionesSalem() {
         disposiciones legales.
       </p>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO VI: DERECHOS DE SALEM INTERNACIONAL
       </h2>
 
@@ -502,7 +503,7 @@ export default function TerminosCondicionesSalem() {
         conformidad con la ley aplicable:
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         1. Negar o Terminar la Prestación de Servicios
       </h3>
 
@@ -572,7 +573,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         2. Modificación de Términos y Condiciones
       </h3>
 
@@ -594,7 +595,7 @@ export default function TerminosCondicionesSalem() {
         mencionada.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         3. Realizar Gestiones de Cobranza
       </h3>
       <p>
@@ -619,7 +620,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         4. Consultar y Reportar a Sociedades de Información Crediticia
       </h3>
       <p>
@@ -645,7 +646,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         5. Ceder Derechos y Obligaciones
       </h3>
       <p>
@@ -660,7 +661,7 @@ export default function TerminosCondicionesSalem() {
         así lo exija.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         6. Uso de Información del Cliente
       </h3>
       <p>
@@ -677,7 +678,7 @@ export default function TerminosCondicionesSalem() {
         cumplimiento de obligaciones legales y regulatorias.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         7. Establecer Límites y Restricciones
       </h3>
       <p>
@@ -700,7 +701,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO VII: COMISIONES Y TASAS DE INTERÉS
       </h2>
 
@@ -712,7 +713,7 @@ export default function TerminosCondicionesSalem() {
         contratación.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         1. Información Clara y Transparente
       </h3>
       <ul className="list-disc pl-6 space-y-4">
@@ -782,7 +783,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         2. Modificaciones a Comisiones y Tasas
       </h3>
       <p>
@@ -800,7 +801,7 @@ export default function TerminosCondicionesSalem() {
         cuando no existan adeudos pendientes.
       </p>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO VIII: POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES
       </h2>
 
@@ -811,7 +812,7 @@ export default function TerminosCondicionesSalem() {
         cumplimiento de la legislación aplicable en México:
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         1. Aviso de Privacidad Integral
       </h3>
 
@@ -831,7 +832,7 @@ export default function TerminosCondicionesSalem() {
         todo momento en nuestro sitio web oficial: [INSERTAR ENLACE AL AVISO DE
         PRIVACIDAD] y en nuestras sucursales.
       </p>
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         2. Marco Legal de Protección de Datos:
       </h3>
       <p>
@@ -860,7 +861,7 @@ export default function TerminosCondicionesSalem() {
           no autorizado.
         </li>
       </ul>
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         3. Ejercicio de Derechos ARCO y Revocación del Consentimiento
       </h3>
       <p>
@@ -877,7 +878,7 @@ export default function TerminosCondicionesSalem() {
         nuestro Aviso de Privacidad y en estos Términos y Condiciones.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         4. Confidencialidad y Uso Limitado de la Información
       </h3>
       <p>
@@ -916,11 +917,11 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO IX: MECANISMOS DE COMUNICACIÓN Y ATENCIÓN A USUARIOS
       </h2>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         1. Canales de Comunicación
       </h3>
       <p>
@@ -947,7 +948,7 @@ export default function TerminosCondicionesSalem() {
           </a>
         </li>
       </ul>
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         2. Quejas y Reclamaciones
       </h3>
       <p>
@@ -957,7 +958,7 @@ export default function TerminosCondicionesSalem() {
         establecidos por la legislación aplicable.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         3. CONDUSEF{" "}
       </h3>
       <p>
@@ -988,7 +989,7 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO X: FUERZA MAYOR Y CASO FORTUITO
       </h2>
 
@@ -1024,11 +1025,11 @@ export default function TerminosCondicionesSalem() {
 
       <p>En tales situaciones de Fuerza Mayor o Caso Fortuito, las obligaciones de Salem Internacional quedarán suspendidas por el tiempo que dure la causa que originó dicho evento. Una vez que la causa cese, Salem Internacional reanudará la prestación de sus servicios tan pronto como sea técnica y razonablemente posible. La Empresa se esforzará, en la medida de sus capacidades, por informar a sus Clientes sobre la situación y las medidas que se estén tomando para mitigar los efectos.</p>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO XI: RESCISIÓN Y TERMINACIÓN
       </h2>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         1. Por Incumplimiento del Cliente
       </h3>
       <p>
@@ -1053,13 +1054,13 @@ export default function TerminosCondicionesSalem() {
         </li>
       </ul>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         2. Por Voluntad del Cliente
       </h3>
       <p> El Cliente podrá dar por terminada la relación contractual en cualquier momento, siempre y cuando no existan adeudos pendientes con Salem Internacional y haya cumplido con las formalidades establecidas en el Contrato particular para la cancelación del Producto y/o Servicio.
       </p>
 
-      <h3 className="text-[#212A59] [leading-trim:both] [text-edge:cap] font-poppins text-[20px] font-bold leading-[29px] tracking-[0px]">
+      <h3 className="text-white font-manrope text-[18px] md:text-[20px] font-semibold mt-4">
         3. Por Salem Internacional
       </h3>
 <p>
@@ -1067,7 +1068,7 @@ Salem Internacional podrá dar por terminada la relación contractual con el Cli
 </p>
 
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO XII: LEGISLACIÓN APLICABLE Y JURISDICCIÓN
       </h2>
 
@@ -1091,7 +1092,7 @@ Salem Internacional podrá dar por terminada la relación contractual con el Cli
       No obstante lo anterior, en primera instancia, se privilegiará la resolución de controversias a través de los mecanismos de atención a usuarios de Salem Internacional (Capítulo IX) y, en caso de no lograr una solución satisfactoria, a través de los procedimientos de conciliación y arbitraje que ofrece la CONDUSEF, cuya intervención es un derecho del usuario de servicios financieros en México antes de recurrir a la vía judicial.
       </p>
 
-      <h2 className="text-[#212A59] leading-[48px] [leading-trim:both] [text-edge:cap] font-poppins text-[28px] font-bold tracking-[0px] mt-6">
+      <h2 className="text-white font-manrope text-[20px] md:text-[26px] font-bold mt-8">
         CAPÍTULO XIII: DIVERSOS
       </h2>
 
@@ -1125,9 +1126,10 @@ Salem Internacional podrá dar por terminada la relación contractual con el Cli
         </li>
       </ol>
 
-      <p className="mt-8">
-        <strong>Última Modificación:</strong> 04 enero 2025
+      <p className="mt-8 text-[#6E6E73]">
+        <strong className="text-white">Última Modificación:</strong> 04 enero 2025
       </p>
+      </div>
     </div>
   );
 }

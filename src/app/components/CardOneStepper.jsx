@@ -162,13 +162,13 @@ export default function CardOneStepper() {
   };
 
   return (
-    <div className="min-h-screen inset-0 z-20 flex items-center justify-center py-8">
-      <div className="max-w-3xl w-full mx-auto bg-white rounded-lg shadow-xl relative">
-        <div className="p-6">
+    <div className="min-h-screen inset-0 z-20 flex items-center justify-center py-8 px-4 bg-[#0A0A0A]">
+      <div className="max-w-3xl w-full mx-auto bg-[#111111] rounded-2xl border border-[#2D2D2D] relative">
+        <div className="p-4 md:p-6">
           {/* Logo */}
           <div className="flex flex-row justify-center mb-8">
             <Image
-              src="/centum-logo-blue.svg"
+              src="/centum-logo.svg"
               alt="Centum Capital"
               width={150}
               height={40}
@@ -177,94 +177,90 @@ export default function CardOneStepper() {
 
           {isSubmitted ? (
             <div className="text-center space-y-6">
-              <h2 className="text-[#212A59] [margin-trim:both] text-center text-xl font-poppins text-[40px] font-normal leading-[48px] tracking-[0px]">
+              <h2 className="text-white font-manrope text-center text-[24px] md:text-[32px] font-semibold leading-[120%] md:leading-[40px]">
                 ¡Gracias por tu solicitud!
               </h2>
-              <p className="text-[#212A59] text-lg">
+              <p className="text-[#A1A1A6] text-lg font-inter">
                 Hemos recibido tu información correctamente. Nos pondremos en contacto contigo a la brevedad.
               </p>
               <button
                 onClick={() => window.location.href = '/'}
-                className="px-6 py-2 rounded font-poppins text-base leading-normal transition-all duration-200 bg-[#212A59] text-white hover:bg-[#1a2247]"
+                className="w-full md:w-auto px-8 py-3 rounded-lg font-inter text-base font-semibold leading-normal transition-all duration-200 bg-white text-[#0A0A0A] hover:bg-[#F5F5F7]"
               >
                 Ir a la página principal
               </button>
             </div>
           ) : (
             <>
-              <div className="mb-8">
-                <h2 className="text-[#212A59] [margin-trim:both] text-center text-xl font-poppins text-[40px] font-normal leading-[48px] tracking-[0px]">
+              <div className="mb-6 md:mb-8">
+                <h2 className="text-white font-manrope text-center text-[22px] md:text-[32px] font-semibold leading-[28px] md:leading-[40px] mb-4 md:mb-6">
                   Completa tu solicitud ingresando tus datos
                 </h2>
-                
+
                 <div className="space-y-6">
                   <div className="space-y-4">
-                    <label className="block text-navy-700 mt-4">
-                      <span className="text-[#212A59] [margin-trim:both] [text-edge:cap] font-poppins text-[18px] font-normal leading-[20px] tracking-[0px]">
+                    <label className="block mt-4">
+                      <span className="text-[#A1A1A6] font-inter text-[16px] font-normal leading-[20px] mb-2 block">
                         Nombre del negocio *
                       </span>
                       <input
                         type="text"
-                        className={`w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${showValidation && emailError && !formData.businessName ? 'border-red-500' : ''}`}
+                        className={`w-full p-3 bg-[#161616] border border-[#2D2D2D] rounded-lg text-white placeholder-[#6E6E73] focus:outline-none focus:border-[#D4A853] ${showValidation && emailError && !formData.businessName ? 'border-red-500' : ''}`}
                         placeholder="Ingresa el nombre de tu negocio"
                         value={formData.businessName}
                         onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
                       />
                     </label>
 
-                    <label className="block text-navy-700">
-                      <span className="text-[#212A59] [margin-trim:both] [text-edge:cap] font-poppins text-[18px] font-normal leading-[20px] tracking-[0px]">
+                    <label className="block">
+                      <span className="text-[#A1A1A6] font-inter text-[16px] font-normal leading-[20px] mb-2 block">
                         ¿De qué producto busca información? *
                       </span>
                       <select
-                        className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-3 bg-[#161616] border border-[#2D2D2D] rounded-lg text-white focus:outline-none focus:border-[#D4A853]"
                         value={selectedProduct}
                         onChange={(e) => setSelectedProduct(e.target.value)}
                       >
-                        <option value="Creditos PYME">Créditos Pyme</option>
-                        <option value="Pasarela de Pagos">Pasarela de Pagos</option>
+                        <option value="Creditos PYME" className="bg-[#161616]">Créditos Pyme</option>
+                        <option value="Pasarela de Pagos" className="bg-[#161616]">Pasarela de Pagos</option>
                       </select>
                     </label>
 
-                    <label className="block text-navy-700">
-                      <span className="text-[#212A59] [margin-trim:both] [text-edge:cap] font-poppins text-[18px] font-normal leading-[20px] tracking-[0px]">
+                    <label className="block">
+                      <span className="text-[#A1A1A6] font-inter text-[16px] font-normal leading-[20px] mb-2 block">
                         Escribe tu correo electrónico *
                       </span>
                       <input
                         type="email"
-                        className={`w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${showValidation && emailError ? 'border-red-500' : ''}`}
+                        className={`w-full p-3 bg-[#161616] border border-[#2D2D2D] rounded-lg text-white placeholder-[#6E6E73] focus:outline-none focus:border-[#D4A853] ${showValidation && emailError ? 'border-red-500' : ''}`}
                         placeholder="ejemplo@correo.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       />
                     </label>
 
-                    <label className="block text-navy-700">
-                      <span className="text-[#212A59] [margin-trim:both] [text-edge:cap] font-poppins text-[18px] font-normal leading-[20px] tracking-[0px]">
+                    <label className="block">
+                      <span className="text-[#A1A1A6] font-inter text-[16px] font-normal leading-[20px] mb-2 block">
                         Confirma tu correo electrónico *
                       </span>
                       <input
                         type="email"
-                        className={`w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${showValidation && emailError ? 'border-red-500' : ''}`}
+                        className={`w-full p-3 bg-[#161616] border border-[#2D2D2D] rounded-lg text-white placeholder-[#6E6E73] focus:outline-none focus:border-[#D4A853] ${showValidation && emailError ? 'border-red-500' : ''}`}
                         placeholder="ejemplo@correo.com"
                         value={formData.confirmEmail}
                         onChange={(e) => setFormData({ ...formData, confirmEmail: e.target.value })}
                       />
                     </label>
 
-                    <label className="block text-navy-700">
-                      <span className="text-[#212A59] [margin-trim:both] [text-edge:cap] font-poppins text-[18px] font-normal leading-[20px] tracking-[0px]">
+                    <label className="block">
+                      <span className="text-[#A1A1A6] font-inter text-[16px] font-normal leading-[20px] mb-2 block">
                         Escribe tu número de celular *
                       </span>
-                      <div className="flex">
-                        {/* <div className="flex items-center px-3 border rounded-l bg-gray-50">
-                          <div id="selected-flag" className="mr-2"></div>
-                          <span id="dial-code">+52</span>
-                        </div> */}
+                      <div className="w-full transition-all duration-300">
                         <input
                           id="phone-input"
                           type="tel"
-                          className={`flex-1 p-2 border border-l-0 rounded-r focus:outline-none focus:ring-2 focus:ring-blue-500 ${showValidation && emailError ? 'border-red-500' : ''}`}
+                          className={`w-full p-3 bg-[#161616] border border-[#2D2D2D] rounded-lg text-white placeholder-[#6E6E73] focus:outline-none focus:border-[#D4A853] ${showValidation && emailError ? 'border-red-500' : ''}`}
                           placeholder="22 2234 5670"
                           value={formData.phone}
                           onChange={(e) => {
@@ -280,26 +276,26 @@ export default function CardOneStepper() {
                     </label>
 
                     {showValidation && emailError && (
-                      <p className="text-red-500 text-sm mt-1">{emailError}</p>
+                      <p className="text-red-400 text-sm mt-1">{emailError}</p>
                     )}
 
                     <div className="flex items-center gap-4">
-                      <input 
-                        type="checkbox" 
-                        className="mt-1 w-6 h-6" 
-                        id="privacy" 
+                      <input
+                        type="checkbox"
+                        className="mt-1 w-6 h-6 accent-[#D4A853]"
+                        id="privacy"
                         checked={privacyAccepted}
                         onChange={(e) => setPrivacyAccepted(e.target.checked)}
                       />
                       <label
                         htmlFor="privacy"
-                        className="text-[#212A59] [margin-trim:both] [text-edge:cap] font-poppins text-[12px] font-normal leading-[20px] tracking-[0px]"
+                        className="text-[#A1A1A6] font-inter text-[12px] font-normal leading-[20px]"
                       >
                         Al continuar aceptas <br /> nuestro{" "}
                         <a
                           target="_blank"
-                          href="/aviso-privacidad"
-                          className="underline underline-offset-2"
+                          href="/aviso-privacidad-salem"
+                          className="text-[#D4A853] underline underline-offset-2 hover:text-white transition-colors"
                         >
                           Aviso de Privacidad
                         </a>
@@ -310,15 +306,15 @@ export default function CardOneStepper() {
               </div>
 
               {/* Submit Button */}
-              <div className="flex flex-col items-end gap-2">
+              <div className="flex flex-col items-center md:items-end gap-2">
                 <button
                   onClick={handleSubmit}
-                  className="px-6 py-1 rounded font-poppins text-base leading-normal transition-all duration-200 bg-[#212A59] text-white hover:bg-[#1a2247]"
+                  className="w-full md:w-auto px-8 py-3 rounded-lg font-inter text-base font-semibold leading-normal transition-all duration-200 bg-white text-[#0A0A0A] hover:bg-[#F5F5F7]"
                 >
                   Enviar
                 </button>
                 {!privacyAccepted && (
-                  <span className="text-sm text-red-500">
+                  <span className="text-sm text-red-400">
                     Debes aceptar el aviso de privacidad para continuar
                   </span>
                 )}

@@ -42,12 +42,12 @@ export default function Navbar() {
             {Object.entries(navItems).map(([title, items]) => (
               <div
                 key={title}
-                className="relative"
+                className="relative group"
                 onMouseEnter={() => setActiveDropdown(title)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center gap-2">
-                  <span className="text-white font-inter text-base font-medium hover:text-[#D4A853] transition-colors">
+                <button className="flex items-center gap-2 py-2">
+                  <span className="text-white font-inter text-base font-medium group-hover:text-[#D4A853] transition-colors">
                     {title}
                   </span>
                   <Image
@@ -55,28 +55,39 @@ export default function Navbar() {
                     width={8}
                     height={12}
                     alt="Arrow Down"
+                    className={`transition-transform duration-200 ${activeDropdown === title ? 'rotate-180' : ''}`}
                   />
                 </button>
 
-                {activeDropdown === title && (
-                  <div className="absolute left-0 mt-0 w-56 bg-[#161616] rounded-lg shadow-xl py-2 z-50 border border-[#2D2D2D]">
+                <div
+                  className={`absolute left-0 top-full pt-2 w-56 z-50 transition-all duration-200 ${
+                    activeDropdown === title
+                      ? 'opacity-100 visible translate-y-0'
+                      : 'opacity-0 invisible -translate-y-2'
+                  }`}
+                >
+                  <div className="bg-[#161616] rounded-lg shadow-xl py-2 border border-[#2D2D2D]">
                     {items.map((item) => (
                       <Link
                         key={item.id}
                         href={item.link}
-                        className="block px-4 py-2.5 text-[#A1A1A6] hover:text-[#D4A853] hover:bg-[#1D1D1F] font-inter text-sm transition-colors"
+                        className="block px-4 py-2.5 text-[#A1A1A6] hover:text-[#D4A853] hover:bg-[#1D1D1F] font-inter text-sm transition-colors cursor-pointer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setActiveDropdown(null);
+                        }}
                       >
                         {item.title}
                       </Link>
                     ))}
                   </div>
-                )}
+                </div>
               </div>
             ))}
 
             <Link
               href="/tarjetas-centumpay"
-              className="text-white font-inter text-base font-medium hover:text-[#D4A853] transition-colors"
+              className="text-white font-inter text-base font-medium hover:text-[#D4A853] transition-colors cursor-pointer py-2"
             >
               Tarjetas Centum
             </Link>
@@ -112,9 +123,21 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#0A0A0A] z-50 md:hidden">
-          <div className="flex justify-between items-center p-6 border-b border-[#2D2D2D] min-h-[100px]">
+      {/* Mobile menu overlay */}
+      <div
+        className={`fixed inset-0 bg-black/60 z-40 md:hidden transition-opacity duration-300 ${
+          isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setIsMobileMenuOpen(false)}
+      />
+
+      {/* Mobile menu panel */}
+      <div
+        className={`fixed inset-y-0 right-0 w-full max-w-sm bg-[#0A0A0A] z-50 md:hidden transform transition-transform duration-300 ease-out ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-between items-center p-6 border-b border-[#2D2D2D] min-h-[100px]">
             <Image
               src="/centum-logo.svg"
               alt="Centum Capital"
@@ -132,16 +155,6 @@ export default function Navbar() {
           </div>
 
           <div className="p-6 space-y-2">
-            <div
-              className="flex items-center justify-between py-4 text-white border-b border-[#2D2D2D]"
-              onClick={() => {}}
-            >
-              <span className="font-inter text-base">Iniciar/crear cuenta</span>
-              <svg className="h-5 w-5 text-[#D4A853]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-
             {Object.entries(navItems).map(([title, items]) => (
               <div key={title} className="border-b border-[#2D2D2D]">
                 <div
@@ -169,7 +182,11 @@ export default function Navbar() {
                       <Link
                         key={item.id}
                         href={item.link}
-                        className="block text-[#A1A1A6] hover:text-[#D4A853] font-inter text-sm transition-colors"
+                        className="block py-2 text-[#A1A1A6] hover:text-[#D4A853] font-inter text-sm transition-colors cursor-pointer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setIsMobileMenuOpen(false);
+                        }}
                       >
                         {item.title}
                       </Link>
@@ -179,17 +196,33 @@ export default function Navbar() {
               </div>
             ))}
 
+            <Link
+              href="/tarjetas-centumpay"
+              className="flex items-center justify-between py-4 text-white border-b border-[#2D2D2D] cursor-pointer"
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              <span className="font-inter text-base">Tarjetas Centum</span>
+              <svg className="h-5 w-5 text-[#A1A1A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+
             <div className="pt-6">
               <button
-                className="w-full bg-white text-[#0A0A0A] py-3 rounded-lg font-inter font-semibold"
-                onClick={() => setDownloadModal(true)}
+                className="w-full bg-white text-[#0A0A0A] py-3 rounded-lg font-inter font-semibold hover:bg-[#F5F5F7] transition-colors"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  setDownloadModal(true);
+                }}
               >
                 Descargar App
               </button>
             </div>
           </div>
         </div>
-      )}
       {downloadModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
           <div className="bg-[#111111] w-full max-w-2xl rounded-2xl shadow-2xl border border-[#2D2D2D] overflow-hidden">

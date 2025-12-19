@@ -267,7 +267,7 @@ export default function CardStepper() {
                 Al continuar aceptas <br /> nuestro{" "}
                 <a
                   target="_blank"
-                  href="/aviso-privacidad"
+                  href="/aviso-privacidad-salem"
                   className="text-[#D4A853] underline underline-offset-2 hover:text-white transition-colors"
                 >
                   Aviso de Privacidad
@@ -546,9 +546,9 @@ export default function CardStepper() {
   };
 
   return (
-    <div className="min-h-screen inset-0 z-20 flex items-center justify-center py-8 bg-[#0A0A0A]">
+    <div className="min-h-screen inset-0 z-20 flex items-center justify-center py-8 px-4 bg-[#0A0A0A]">
       <div className="max-w-3xl w-full mx-auto bg-[#111111] rounded-2xl border border-[#2D2D2D] relative">
-        <div className="p-6">
+        <div className="p-4 md:p-6">
           {/* Logo */}
           <div className="flex flex-row justify-center mb-8">
             <Image
@@ -562,12 +562,11 @@ export default function CardStepper() {
           {currentStep > 1 && currentStep < steps.length && (
             <button
               onClick={handlePrevious}
-              className="absolute top-6 left-6 p-2 text-[#A1A1A6] hover:text-white rounded-full transition-colors duration-200"
+              className="absolute top-4 left-4 md:top-6 md:left-6 p-1 md:p-2 text-[#A1A1A6] hover:text-white rounded-full transition-colors duration-200"
               aria-label="Volver al paso anterior"
             >
               <svg
-                width="35"
-                height="35"
+                className="w-6 h-6 md:w-9 md:h-9"
                 viewBox="0 0 45 45"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -580,11 +579,11 @@ export default function CardStepper() {
             </button>
           )}
 
-          <div className="flex items-center justify-center mb-8">
+          <div className="flex items-center justify-center mb-6 md:mb-8">
             {Array.from({ length: 2 }, (_, i) => i + 1).map((step) => (
               <div key={step} className="flex items-center">
                 <div
-                  className={`w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold ${
+                  className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center text-lg md:text-xl font-bold ${
                     step === currentStep
                       ? "bg-[#D4A853] text-[#0A0A0A]"
                       : step < currentStep
@@ -596,7 +595,7 @@ export default function CardStepper() {
                 </div>
                 {step < 2 && (
                   <div
-                    className={`w-24 h-0.5 ${
+                    className={`w-12 md:w-24 h-0.5 ${
                       step < currentStep ? "bg-[#D4A853]" : "bg-[#2D2D2D]"
                     }`}
                   />
@@ -605,18 +604,18 @@ export default function CardStepper() {
             ))}
           </div>
 
-          <div className="mb-8">
-            <h2 className="text-white text-center font-manrope text-[32px] font-semibold leading-[40px] tracking-[0px] mb-6">
+          <div className="mb-6 md:mb-8">
+            <h2 className="text-white text-center font-manrope text-[22px] md:text-[32px] font-semibold leading-[28px] md:leading-[40px] tracking-[0px] mb-4 md:mb-6">
               {steps[currentStep - 1].title}
             </h2>
             {steps[currentStep - 1].fields}
           </div>
 
           {/* Next Button */}
-          <div className="flex flex-col items-end gap-2">
+          <div className="flex flex-col items-center md:items-end gap-2">
             <button
               onClick={currentStep === steps.length ? () => window.location.href = '/' : handleNext}
-              className="px-8 py-3 rounded-lg font-inter text-base font-semibold leading-normal transition-all duration-200 bg-white text-[#0A0A0A] hover:bg-[#F5F5F7]"
+              className="w-full md:w-auto px-8 py-3 rounded-lg font-inter text-base font-semibold leading-normal transition-all duration-200 bg-white text-[#0A0A0A] hover:bg-[#F5F5F7]"
             >
               {currentStep === steps.length ? 'Ir al Inicio' : 'Siguiente'}
             </button>

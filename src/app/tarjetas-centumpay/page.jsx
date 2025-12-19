@@ -8,10 +8,10 @@ export default function TarjetasCentumpay() {
     <div className="bg-[#0A0A0A]">
       <HeroTarjetasCentum />
 
-      <h2 className="text-white text-center font-manrope text-[35px] font-bold leading-[48px] tracking-[0px] mt-[110px]">
+      <h2 className="text-white text-center font-manrope text-[24px] md:text-[35px] font-bold leading-[32px] md:leading-[48px] tracking-[0px] mt-[60px] md:mt-[110px] px-4">
         Seguridad y eficiencia en cada transferencia
       </h2>
-      <h3 className="text-[#A1A1A6] text-center font-inter text-[25px] font-normal leading-[33px] tracking-[0px] mt-[15px] mb-[115px]">
+      <h3 className="text-[#A1A1A6] text-center font-inter text-[16px] md:text-[25px] font-normal leading-[24px] md:leading-[33px] tracking-[0px] mt-[15px] mb-[60px] md:mb-[115px] px-4">
         Agiliza tus pagos y eleva tu experiencia financiera.
       </h3>
 
@@ -78,10 +78,10 @@ export default function TarjetasCentumpay() {
           </div>
 
           <div className="w-full md:w-1/2 text-center md:text-left gap-2 flex flex-col">
-            <h2 className="text-white font-manrope text-[40px] font-bold leading-[48px] tracking-[0px]">
+            <h2 className="text-white font-manrope text-[28px] md:text-[40px] font-bold leading-[36px] md:leading-[48px] tracking-[0px]">
               App Centum
             </h2>
-            <h3 className="text-[#A1A1A6] font-inter text-[20px] font-normal leading-[29px] tracking-[0px]">
+            <h3 className="text-[#A1A1A6] font-inter text-[16px] md:text-[20px] font-normal leading-[24px] md:leading-[29px] tracking-[0px]">
               Descarga nuestra App y comienza ya
             </h3>
 

@@ -6,33 +6,24 @@ export default function DispersionNomina() {
   return (
     <>
       <HeroDispersionNomina />
-      <div className="relative h-[480px] bg-gradient-to-r from-[#386EB159] to-[#386EB109] flex items-center px-6 mb-[100px] lg:px-8">
-        <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
-          <h1 className="text-[#212A59] font-poppins text-[40px] font-semibold leading-[52px] tracking-[0px] text-pretty max-w-[70%] ">
+      <div className="relative min-h-[300px] md:h-[480px] bg-gradient-to-r from-[#386EB159] to-[#386EB109] flex items-center px-6 mb-[50px] md:mb-[100px] lg:px-8 py-10 md:py-0">
+        <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-6">
+          <h1 className="text-[#212A59] font-poppins text-[24px] md:text-[40px] font-semibold leading-[32px] md:leading-[52px] tracking-[0px] text-pretty text-center md:text-left md:max-w-[70%]">
             Haz que el proceso de pago sea más fácil y confiable para tu negocio
             y tus empleados.
           </h1>
           <button
-            className="text-white text-center font-inter text-[16px] font-bold leading-normal rounded-[80px] bg-[#212A59]
- px-14 h-[70px] 
-"
-            size="lg"
+            className="text-white text-center font-inter text-[16px] font-bold leading-normal rounded-[80px] bg-[#212A59] px-10 md:px-14 h-[56px] md:h-[70px] whitespace-nowrap"
           >
             Llámanos
           </button>
         </div>
       </div>
 
-      <h2
-        className="text-[#212A59] text-center font-poppins text-[40px] font-bold leading-[48px] tracking-[0px] mb-[24px]
-"
-      >
+      <h2 className="text-[#212A59] text-center font-poppins text-[26px] md:text-[40px] font-bold leading-[34px] md:leading-[48px] tracking-[0px] mb-[16px] md:mb-[24px] px-4">
         Maximiza la eficiencia y toma el control de tus pagos
       </h2>
-      <p
-        className="text-[#386EB1] text-center font-inter text-[25px] font-normal leading-[33px] tracking-[0px] text-pretty
- mb-[100px]"
-      >
+      <p className="text-[#386EB1] text-center font-inter text-[16px] md:text-[25px] font-normal leading-[24px] md:leading-[33px] tracking-[0px] text-pretty mb-[50px] md:mb-[100px] px-4">
         Reduce el tiempo dedicado a la administración de pagos y aumenta la
         satisfacción de tu equipo.
       </p>

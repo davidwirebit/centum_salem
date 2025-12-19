@@ -15,25 +15,16 @@ export default function BenefistTerminalesTPV() {
           }}
         ></div>
 
-        <h2
-          className="mt-[170px] mb-[24px] text-[#212A59] text-center font-poppins text-[40px] font-bold leading-[48px] tracking-[0px]
-  "
-        >
-          Transforma cada venta en una
-          <br /> mejor experiencia
+        <h2 className="mt-[80px] md:mt-[170px] mb-[16px] md:mb-[24px] text-[#212A59] text-center font-poppins text-[26px] md:text-[40px] font-bold leading-[34px] md:leading-[48px] tracking-[0px] px-4">
+          Transforma cada venta en una mejor experiencia
         </h2>
 
-        <h3
-          className="text-[#386EB1] text-center font-inter text-[25px] font-normal leading-[33px] tracking-[0px] mb-[125px]
-  
-  "
-        >
-          Gestión inteligente, pagos rápidos y control absoluto <br /> para
-          hacer crecer tu negocio sin límites.
+        <h3 className="text-[#386EB1] text-center font-inter text-[16px] md:text-[25px] font-normal leading-[24px] md:leading-[33px] tracking-[0px] mb-[60px] md:mb-[125px] px-4">
+          Gestión inteligente, pagos rápidos y control absoluto para hacer crecer tu negocio sin límites.
         </h3>
 
         {/* Contenido */}
-        <div className="relative z-10 flex flex-col gap-6 max-w-2xl mx-auto">
+        <div className="relative z-10 flex flex-col gap-4 md:gap-6 max-w-2xl mx-auto px-4">
           <div className="flex items-center gap-4 p-6 bg-white/30 backdrop-blur-md rounded-3xl shadow-lg">
             <div className="w-12 h-12 bg-[#386EB1] rounded-full flex items-center justify-center flex-shrink-0">
               <svg
