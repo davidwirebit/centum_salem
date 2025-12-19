@@ -1,0 +1,6 @@
+export const phone = "Tel. 81 1494 9267"
+export const email = "atencionalcliente@centum.mx"
+export const linkedin = "https://www.linkedin.com/in/centum-capital-369958351"
+export const facebook = "https://www.facebook.com/share/1AW9mnAr8u/"
+export const instagram = "https://www.instagram.com/centum.mx?igsh=MXY1bzBiaHVicDIzMw=="
+export const whatsapp = "https://wa.link/4ia4ul"
